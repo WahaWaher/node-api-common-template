@@ -1,0 +1,27 @@
+{
+  "name": "node-api-common-template",
+  "version": "1.0.0",
+  "description": "Common Template for Node/Express/Mongo API Apps",
+  "scripts": {
+    "dev": "nodemon src/app.js --mode=development",
+    "prod": "nodemon src/app.js --mode=production"
+  },
+  "keywords": [
+    "node",
+    "api",
+    "mongo",
+    "express",
+    "template"
+  ],
+  "author": "WahaWaher",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.14",
+    "node.extend": "^2.0.2",
+    "yargs": "^15.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
