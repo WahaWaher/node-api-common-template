@@ -6,7 +6,7 @@ const { disable: disabledProps } = config.api.response.success;
 
 let defaults = {
   code: undefined,
-  message: 'Successfully',
+  message: 'Operation completed successfully',
   status: 200,
   data: undefined,
   warnings: undefined,
@@ -44,7 +44,7 @@ module.exports = (req, res, next) => {
     // Disabling props by config
     disabledProps.forEach(prop => delete body[prop]);
 
-    res.status(200).send(body);
+    res.status(body.status).send(body);
   };
   next();
 };
