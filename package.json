@@ -1,6 +1,6 @@
 {
   "name": "node-api-common-template",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Common Template for Node/Express/Mongo API Apps",
   "scripts": {
     "dev": "nodemon src/app.js --mode=development",

@@ -3,12 +3,6 @@ const _ = require('lodash');
 
 indexModule(
   module,
-  (fileName, fileExt) => {
-    // Allowed filetypes
-    return ['.js'].includes(fileExt);
-  },
-  (fileName, fileExt) => {
-    // Cut "Mw" part from module name
-    return _.camelCase(fileName);
-  }
+  (fileName, fileExt) => ['.js'].includes(fileExt),
+  (fileName, fileExt) => _.camelCase(fileName)
 );

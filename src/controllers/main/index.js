@@ -8,7 +8,7 @@ indexModule(
     return ['.js'].includes(fileExt);
   },
   (fileName, fileExt) => {
-    // Cut "Mw" part from module name
+    // Cut "Ctrl" part from module name
     return _.camelCase(fileName).replace('Ctrl', '');
   }
 );

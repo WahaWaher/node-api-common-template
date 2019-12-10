@@ -1,4 +1,4 @@
-Common Template for Node/Express/Mongo API Apps <sup>1.1.2</sup>
+Common Template for Node/Express/Mongo API Apps <sup>1.1.3</sup>
 -------
 ## Get started:
 ```sh
