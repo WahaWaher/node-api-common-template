@@ -9,6 +9,6 @@ indexModule(
   },
   (fileName, fileExt) => {
     // Cut "Mw" part from module name
-    return _.camelCase(fileName);
+    return _.camelCase(fileName).replace('Ctrl', '');
   }
 );

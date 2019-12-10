@@ -1,4 +1,4 @@
-const config = require('./../utils/get-config');
+const config = require('../utils/get-config');
 
 module.exports = (req, res, next) => {
   let origin = req.get('origin');

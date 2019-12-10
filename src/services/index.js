@@ -1,5 +1,14 @@
-const exampleService = require('./example.service');
+const indexModule = require('index-module');
+const _ = require('lodash');
 
-module.exports = {
-  exampleService,
-};
+indexModule(
+  module,
+  (fileName, fileExt) => {
+    // Allowed filetypes
+    return ['.js'].includes(fileExt);
+  },
+  (fileName, fileExt) => {
+    // Cut "Mw" part from module name
+    return _.camelCase(fileName);
+  }
+);

@@ -1,4 +1,4 @@
-const successRespData = require('../responses/success-responses');
+const { successResponses } = require('../responses');
 const extend = require('node.extend');
 const config = require('../utils/get-config');
 
@@ -22,12 +22,12 @@ module.exports = (req, res, next) => {
 
     // First arg - success code, second - body object
     if (typeof first === 'string' || typeof first === 'number') {
-      regResp = successRespData[first];
+      regResp = successResponses[first];
       argResp = second || {};
 
       // First arg - object
     } else if (typeof first === 'object' && first !== null) {
-      regResp = successRespData[first.code];
+      regResp = successResponses[first.code];
       argResp = first || {};
     }
 
