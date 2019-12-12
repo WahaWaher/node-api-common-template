@@ -20,7 +20,6 @@ const app = express();
 
 /**
  * Middlewares: main
- *
  */
 app.use(setCors);
 app.use(addSuccessMethod);
@@ -28,7 +27,6 @@ app.use(addErrorMethod);
 
 /**
  * Routes
- *
  */
 app.use(`/`, mainRouter);
 app.use(`${base}/`, usersRouter);
@@ -36,14 +34,12 @@ app.use(`${base}/me`, accountRouter);
 
 /**
  * Middlewares: errors
- *
  */
 app.use(handleNotFound);
 app.use(handleErrors);
 
 /**
  * Start app
- *
  */
 Promise.resolve('Starting app...')
   .then(init => {

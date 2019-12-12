@@ -36,7 +36,7 @@ module.exports = (req, res, next) => {
       return res.error(500001);
     }
 
-    body = extend(true, defaults, argResp, regResp, {
+    extend(true, body, defaults, argResp, regResp, {
       // Modifying response body
       message: regResp.message[lang],
     });
