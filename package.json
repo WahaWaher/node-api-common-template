@@ -18,7 +18,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "index-module": "^1.0.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mongoose": "^5.7.14",
     "node.extend": "^2.0.2",
     "yargs": "^15.0.2"
